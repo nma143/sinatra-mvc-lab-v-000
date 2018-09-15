@@ -13,21 +13,24 @@ class PigLatinizer
       words = phrase
     end
     phrase_converted = ""
-    words.each {|word| phrase_converted += piglatinize_single_word(word)}
-    phrase_converted
-  end
-  def piglatinize_single_word(word)
-    word_converted=""
-
-    if word.match(/\A[aeiou]|[AIEOU]/) #if it starts with a vowel, just append 'way'
-      #text[0]=text[0].upcase!
-      word_converted += word + "way"
-    else #else find the prefix (all letters before first vowel), append with 'ay'
-      parts = word.split /([aeiou].*)/ #=> e.g ["b", "anana"]
-      suffix = parts[0]+"ay"
-      #parts[1][0].upcase
-      word_converted += parts[1] + suffix
+    wordcount=0
+    words.each do |word|
+      word_converted=""
+      if word.match(/\A[aeiou]|[AIEOU]/) #if it starts with a vowel, just append 'way'
+        #text[0]=text[0].upcase!
+        word_converted += word + "way"
+      else #else find the prefix (all letters before first vowel), append with 'ay'
+        parts = word.split /([aeiou].*)/ #=> e.g ["b", "anana"]
+        suffix = parts[0]+"ay"
+        #parts[1][0].upcase
+        word_converted += parts[1] + suffix
+      end
+      if wordcount>0
+        word_converted = " " + word_converted
+      end
+      phrase_converted += word_converted 
+      ++wordcount 
     end
-    word_converted
+    phrase_converted
   end
 end
