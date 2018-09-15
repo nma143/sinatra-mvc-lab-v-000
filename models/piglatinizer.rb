@@ -26,6 +26,7 @@ class PigLatinizer
         word_converted += parts[1] + suffix
       end
       if wordcount > 0
+        puts "Hey Nikki"
         word_converted = " " + word_converted
       end
       phrase_converted += word_converted
