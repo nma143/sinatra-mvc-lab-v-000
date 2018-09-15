@@ -28,8 +28,8 @@ class PigLatinizer
       if wordcount>0
         word_converted = " " + word_converted
       end
-      phrase_converted += word_converted 
-      ++wordcount 
+      phrase_converted += word_converted
+      ++wordcount
     end
     phrase_converted
   end
