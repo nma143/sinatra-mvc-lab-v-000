@@ -7,8 +7,8 @@ class PigLatinizer
 
   def piglatinize(phrase)
 
-    if phrase.split(/\W+/) 
-      words = phrase.split(/\W+/) 
+    if phrase.split(/\W+/)
+      words = phrase.split(/\W+/)
     else
       words = phrase
     end
