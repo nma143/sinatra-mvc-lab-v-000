@@ -13,7 +13,7 @@ class PigLatinizer
       words = phrase
     end
     phrase_converted = ""
-    words.each {|word| phrase_converted += piglatinize_single_word(word) + " "}
+    words.each {|word| phrase_converted += piglatinize_single_word(word)}
     phrase_converted
   end
   def piglatinize_single_word(word)
