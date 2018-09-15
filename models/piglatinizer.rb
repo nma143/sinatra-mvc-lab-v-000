@@ -5,5 +5,5 @@ class Piglatinizer
   def initialize(text)
     @text = text.downcase
   end
-  
+
 end
