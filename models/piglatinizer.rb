@@ -25,9 +25,7 @@ class PigLatinizer
         #parts[1][0].upcase
         word_converted += parts[1] + suffix
       end
-      puts wordcount
-      if wordcount > 0
-        puts "Hey Nikki"
+      if wordcount > 0 #only add spaces if there is more than 1 word
         word_converted = " " + word_converted
       end
       phrase_converted += word_converted
