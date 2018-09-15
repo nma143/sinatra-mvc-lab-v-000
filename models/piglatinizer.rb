@@ -7,7 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize
-    converted_text = 
+    converted_text =
   end
 
 end
