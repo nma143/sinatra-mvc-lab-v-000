@@ -31,7 +31,7 @@ class PigLatinizer
         word_converted = " " + word_converted
       end
       phrase_converted += word_converted
-      ++wordcount
+      wordcount= wordcount +1
     end
     phrase_converted
   end
