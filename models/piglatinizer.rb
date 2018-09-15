@@ -6,4 +6,6 @@ class Piglatinizer
     @text = text.downcase
   end
 
+
+
 end
