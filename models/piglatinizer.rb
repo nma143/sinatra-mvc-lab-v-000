@@ -25,6 +25,7 @@ class PigLatinizer
         #parts[1][0].upcase
         word_converted += parts[1] + suffix
       end
+      puts wordcount
       if wordcount > 0
         puts "Hey Nikki"
         word_converted = " " + word_converted
