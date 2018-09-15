@@ -1,4 +1,4 @@
-class Piglatinizer
+class PigLatinizer
 
   attr_reader :text
 
@@ -6,6 +6,8 @@ class Piglatinizer
     @text = text.downcase
   end
 
-
+  def piglatinize
+    converted_text = 
+  end
 
 end
