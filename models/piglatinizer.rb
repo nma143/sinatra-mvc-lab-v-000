@@ -5,13 +5,11 @@ class PigLatinizer
   def initialize
   end
 
-  def piglatinize(text)
+  def piglatinize(phrase)
 
     words = text.split(/\W+/)
-    text_converted = ""
-
-
-    end
+    phrase_converted = ""
+    words.each {|word| phrase_converted += piglatinize_single_word(word)}
   end
   def piglatinize_single_word(word)
     word_converted=""
