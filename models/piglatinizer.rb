@@ -7,18 +7,18 @@ class PigLatinizer
 
   def piglatinize(text)
     text.downcase!
-    
+
     if text.match(/\A[aeoui]/) #if it starts with a vowel, just append 'way'
       text + "way"
     else #else find the prefix (all letters before first vowel), append with 'ay'
       suffix = text[0]+"ay"
       text[0]=""
-      text + suffix  
+      text + suffix
     end
 
-    
 
-    
+
+
   end
 
 end
