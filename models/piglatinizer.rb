@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    converted_text
+    firstletter = text[0]
   end
 
 end
