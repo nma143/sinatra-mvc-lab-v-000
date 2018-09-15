@@ -7,7 +7,7 @@ class PigLatinizer
 
   def piglatinize(phrase)
 
-    if phrase.split(/\W+/) #if there is more than 1 word
+    if phrase.split(/\W+/).length>0 #if there is more than 1 word
       words = phrase.split(/\W+/) #split up the words in the phrase
     else #if the phrase is just one word
       words = phrase
