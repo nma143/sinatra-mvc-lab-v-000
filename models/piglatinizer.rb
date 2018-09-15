@@ -7,7 +7,7 @@ class PigLatinizer
 
   def piglatinize(phrase)
 
-    words = text.split(/\W+/)
+    words = phrase unless text.split(/\W+/) end
     phrase_converted = ""
     words.each {|word| phrase_converted += piglatinize_single_word(word)}
     phrase_converted
