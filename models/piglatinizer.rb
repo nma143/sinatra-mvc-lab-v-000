@@ -14,7 +14,7 @@ class PigLatinizer
     else #else find the prefix (all letters before first vowel), append with 'ay'
       parts = text.split /([aeiou].*)/ #=> e.g ["b", "anana"]
       suffix = parts[0]+"ay"
-      parts[1][0].upcase
+      #parts[1][0].upcase
       parts[1] + suffix
     end
 
