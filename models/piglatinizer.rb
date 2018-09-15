@@ -15,7 +15,7 @@ class PigLatinizer
   end
   def piglatinize_single_word(word)
     word_converted=""
-    
+
     if word.match(/\A[aeiou]|[AIEOU]/) #if it starts with a vowel, just append 'way'
       #text[0]=text[0].upcase!
       word_converted += word + "way"
