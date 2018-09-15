@@ -12,9 +12,10 @@ class PigLatinizer
       text[0]=text[0].upcase!
       text + "way"
     else #else find the prefix (all letters before first vowel), append with 'ay'
-      suffix = text[0]+"ay"
-      text[0]=""
-      text + suffix
+      parts = text.split /([aeiou].*)/ #=> e.g ["b", "anana"]
+      suffix = parts[0]+"ay"
+      parts[1][0].upcase
+      parts[1] + suffix
     end
 
 
