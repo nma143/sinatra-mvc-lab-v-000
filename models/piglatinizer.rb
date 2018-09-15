@@ -15,7 +15,6 @@ class PigLatinizer
     phrase_converted = ""
     wordcount=0
     words.each do |word|
-    {
       word_converted=""
       if word.match(/\A[aeiou]|[AIEOU]/) #if it starts with a vowel, just append 'way'
         #text[0]=text[0].upcase!
@@ -31,7 +30,6 @@ class PigLatinizer
       end
       phrase_converted += word_converted
       ++wordcount
-    }
     end
     phrase_converted
   end
