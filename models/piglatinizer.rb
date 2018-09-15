@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    firstletter = text[0]
+    suffix = text[0]+"ay"
   end
 
 end
