@@ -6,7 +6,6 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    text.downcase!
 
     if text.match(/\A[aeoui]/) #if it starts with a vowel, just append 'way'
       #text[0]=text[0].upcase!
